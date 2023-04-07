@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro.io</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input class="fade-in" type="search" name="search" id="search" />
+    <div class="weather-display hidden fade-in">
+      <div class="button">
+        <i class="fa-solid fa-xmark icon fa-2xl"></i>
+      </div>
+      <h1 class="country-name">Dar es Salaam</h1>
+      <img
+        src="https://images.unsplash.com/photo-1589177900326-900782f88a55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+        alt="Region Image"
+        class="cover-image"
+      />
+      <div class="flag-display"></div>
+      <div class="weather-info">
+        <div class="current-info">
+          <div class="current-temp weather-data">
+            <span class="label">Temp 🌡️:</span> <span id="temp">93</span> °c
+          </div>
+          <div class="apperent-temp weather-data">
+            <span class="label">Feels 🌻: </span>
+            <span id="apparent">100</span> °c
+          </div>
+          <div class="chance-of-rain weather-data">
+            <span class="label">Rain 🌧️: </span>
+            <span id="percent">74</span>%
+          </div>
+          <div class="relative-humidity weather-data">
+            <span class="label">Humidity 🌦️: </span
+            ><span id="humidity">94</span>%
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="clean.js"></script>
+    <script
+      src="https://kit.fontawesome.com/672426bf02.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
